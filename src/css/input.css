@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom scroll bar */
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: #020307;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #ff2c1f;
+    border-radius: 5rem;
+}
+
+body {
+    font-family: "Poppins", serif;
+}
+
+/* custom scroll bar */
+
+.navbar.active {
+    top: 100%;
+}
+
+#header.shadow {
+    background-color: #fff;
+    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+
+#header.shadow .navbar a {
+    color: #020307;
+}
+
+#header.shadow .logo {
+    color: #020307;
+}
+
+@media (max-width:774px) {
+    #header.shadow #menu-icon {
+        color: #020307;
+    }
+}
